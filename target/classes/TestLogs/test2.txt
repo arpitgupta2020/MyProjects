@@ -1,0 +1,5 @@
+Time = 12.45 secs
+Time = 10.2 secs
+Time = 14.11 secs
+Time = 9.8 secs
+Time = 8.64 secs
