@@ -31,7 +31,7 @@ class SumOfIntegersSolution {
 public class SumOfIntegers {
 
 	public static void main(String[] args) {
-		System.out.println(SumOfIntegersSolution.testSumOfIntegersSolution(3, 2));
+		System.out.println(SumOfIntegersSolution.testSumOfIntegersSolution(10, 14));
 
 	}
 

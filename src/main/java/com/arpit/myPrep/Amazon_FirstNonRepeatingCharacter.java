@@ -20,10 +20,13 @@ public class Amazon_FirstNonRepeatingCharacter {
 		
 		for(int i=0;i< s.length(); i++) {
 			occurences.put(s.charAt(i), occurences.getOrDefault(s.charAt(i), 0)+1);
-			/*
-			 * if(occurences.containsKey(s.charAt(i))) { occurences.put(s.charAt(i),
-			 * occurences.get(s.charAt(i))+1); }else { occurences.put(s.charAt(i), 1); }
-			 */
+			
+//			  if(occurences.containsKey(s.charAt(i))) { 
+//				  occurences.put(s.charAt(i), occurences.get(s.charAt(i))+1);
+//			  }else {
+//				  occurences.put(s.charAt(i), 1);
+//			  }
+			 
 		}
 		for(int i=0;i< s.length(); i++) {
 			if(occurences.get(s.charAt(i)) == 1) {

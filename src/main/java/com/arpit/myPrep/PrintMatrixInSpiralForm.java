@@ -5,6 +5,7 @@ public class PrintMatrixInSpiralForm {
 	private static int spiralPrint(int m, int n, int[][] a, int lastElement) {
 		
 		int k=0, l=0, i, counter=0;
+		int lastelement= -1;
 		
 		/*  k - starting row index
         m - ending row index
@@ -19,7 +20,7 @@ public class PrintMatrixInSpiralForm {
 				System.out.print(a[k][i]+" ");
 				counter++;
 				if(counter == lastElement) {
-					return a[k][i];
+					lastElement= a[k][i];
 				}
 			}
 			k++;
@@ -28,7 +29,7 @@ public class PrintMatrixInSpiralForm {
 				System.out.print(a[i][n-1]+" ");
 				counter++;
 				if(counter == lastElement) {
-					return a[i][n-1];
+					lastElement= a[i][n-1];
 				}
 			}
 			n--;
@@ -38,7 +39,7 @@ public class PrintMatrixInSpiralForm {
 					System.out.print(a[m-1][i]+" ");
 					counter++;
 					if(counter == lastElement) {
-						return a[m-1][i];
+						lastElement= a[m-1][i];
 					}
 				}
 				m--;
@@ -49,7 +50,7 @@ public class PrintMatrixInSpiralForm {
 					System.out.print(a[i][l]+" ");
 					counter++;
 					if(counter == lastElement) {
-						return a[i][l];
+						lastElement= a[i][l];
 					}
 				}
 				l++;
@@ -57,7 +58,7 @@ public class PrintMatrixInSpiralForm {
 			
 			
 		}
-		return -1;
+		return lastElement;
 		
 	}
 
@@ -69,7 +70,7 @@ public class PrintMatrixInSpiralForm {
 				{7,8,9,10,11,12},
 				{13,14,15,16,17,18}};
 		
-		int lastElement= 18;
+		int lastElement= 17;
 				
 			
 		System.out.println("Last Element: "+ spiralPrint(R, C, a, lastElement));

@@ -3,6 +3,8 @@ package com.arpit.seleniumPrograms;
 import java.util.Optional;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chromium.ChromiumDriver;
@@ -43,6 +45,7 @@ public class AutomateInternetConnection {
 				Optional.of(ConnectionType.CELLULAR3G)));
 		driver.navigate().to("http://www.linked.com");
 		System.out.println("Slow" + driver.getTitle());
+		
 	}
 	
 	@Test

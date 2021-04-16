@@ -1,4 +1,4 @@
-package com.arpit.myPrep;
+ package com.arpit.myPrep;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,8 +19,7 @@ public class KthLargestNumberInArray {
 	}
 
 	private static Integer kthLargestNumberInArray(Integer[] input, int kthposition) {
-		List<Integer> inputArray = (ArrayList<Integer>) 
-                Arrays.stream(input).collect(Collectors.toList());
+		List<Integer> inputArray =  Arrays.stream(input).collect(Collectors.toList());
 		
 		List<Integer> reverseList= inputArray.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
 		
