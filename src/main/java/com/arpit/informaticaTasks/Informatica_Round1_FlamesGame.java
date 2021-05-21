@@ -8,8 +8,8 @@ package com.arpit.informaticaTasks;
 public class Informatica_Round1_FlamesGame {
 
 	public static void main(String[] args) {
-		String s1= "Arpitrt";
-		String s2= "Ankitartrt";
+		String s1= "Arpit";
+		String s2= "Ankita";
 		String result="Flames";
 		
 		flamesGame(s1, s2, result);
