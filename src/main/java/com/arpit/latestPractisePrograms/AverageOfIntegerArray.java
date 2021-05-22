@@ -1,4 +1,4 @@
-package com.arpit.arrays;
+package com.arpit.latestPractisePrograms;
 
 import java.util.Arrays;
 import java.util.OptionalDouble;

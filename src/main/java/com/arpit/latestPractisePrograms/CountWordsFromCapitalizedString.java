@@ -1,4 +1,4 @@
-package com.arpit.strings;
+package com.arpit.latestPractisePrograms;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
